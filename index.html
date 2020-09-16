@@ -19,17 +19,29 @@
 			a:hover, a:active{
 				background-color: red;
 			}
+			img {
+				width: 100;
+				height: 100;
+			}
 		</style>
 	</head>
 	<body>
 		<p><a href="#C4">Jump to Chapter 4</a></p>
 		<p><a href="#C10">Jump to Chapter 10</a></p>
+		<img src="workplace.jpg" usemap="#workmap" width=400 height=379>
+
+		<map name="workmap">
+			<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+			<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+			<area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+		</map>
+
 		<h1 style="text-align:center">Heading</h1>
 		<p>Paragraph</p>
 		<a target="_blank" href="https://google.com">Google</a>
 		<hr>
-		<img title="img title" src="w3schools.jpg" alt="W3 Logo" width=100 height=100>
-		<hr>
+		<img title="img title" src="w3schools.jpg" alt="W3 Logo" style="float:right;width:42px;height:42px;">
+		
 		<p title="I'm a tooltip">This is a paragraph.</p>
 		<hr>
 		<pre>
@@ -43,7 +55,7 @@ Oh, bring back my Bonnie to me.
 		</pre>
 		<p>Image as link</p>
 		<a href="#">
-			<img src="w3schools.jpg" alt="img link" width=100 height=100>
+			<img src="w3schools.jpg" alt="img link">
 		</a>
 		<hr>
 		<a href="mailto:someone@example.com">Send email</a>
