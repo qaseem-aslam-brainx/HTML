@@ -23,6 +23,28 @@
 				width: 100;
 				height: 100;
 			}
+			table, th, td {
+				border: 1px solid black;
+				border-collapse: collapse;
+				margin: 12px;
+			}
+			table{
+				border-spacing: 5px;
+			}
+			#t01 {
+				width: 100%;
+				background-color: #f1f1c1;
+			}
+			#t01 tr:nth-child(even) {
+				background-color: #eee;
+			}
+			#t01 tr:nth-child(odd) {
+				background-color: #fff;
+			}
+			#t01 th {
+				color: white;
+				background-color: black;
+			}
 /*
 			body {
 				background-image: url('workplace.jpg');
@@ -36,8 +58,57 @@
 	<body>
 		<p><a href="#C4">Jump to Chapter 4</a></p>
 		<p><a href="#C10">Jump to Chapter 10</a></p>
-		<img src="workplace.jpg" usemap="#workmap" width=400 height=379>
+		<table style="width:50%;text-align: center" id="t01">
+			<caption>Monthly savings</caption>
+			<tr>
+				<th>Firstname</th>
+				<th>Lastname</th>
+				<th>Age</th>
+			</tr>
+			<tr>
+				<td>Jill</td>
+				<td>Smith</td>
+				<td>50</td>
+			</tr>
+			<tr>
+				<td>Eve</td>
+				<td>Jackson</td>
+				<td>94</td>
+			</tr>
+			<tr>
+				<td>Adam</td>
+				<td>Jackson</td>
+				<td>84</td>
+			</tr>
+		</table>
 
+		<table style="width:50%">
+			<tr>
+				<th>Name</th>
+				<th colspan="2">Telephone</th>
+			</tr>
+			<tr>
+				<td>Bill Gates</td>
+				<td>55577854</td>
+				<td>55577855</td>
+			</tr>
+		</table>
+
+		<table style="width:50%">
+			<tr>
+				<th>Name:</th>
+				<td>Bill Gates</td>
+			</tr>
+			<tr>
+				<th rowspan="2">Telephone:</th>
+				<td>55577854</td>
+			</tr>
+			<tr>
+				<td>55577855</td>
+			</tr>
+		</table>
+
+		<img src="workplace.jpg" usemap="#workmap" width=400 height=379>
 		<map name="workmap">
 			<area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
 			<area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
@@ -104,45 +175,6 @@ Oh, bring back my Bonnie to me.
 		<p>This chapter explains ba bla bla</p>
 
 		<h2 id="C10">Chapter 10</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 11</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 12</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 13</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 14</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 15</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 16</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 17</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 18</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 19</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 20</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 21</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 22</h2>
-		<p>This chapter explains ba bla bla</p>
-
-		<h2>Chapter 23</h2>
 		<p>This chapter explains ba bla bla</p>
 
 	</body>
